@@ -1,0 +1,31 @@
+/* src/styles/styles.css */
+
+/* Base styles */
+:root {
+  --background: #1f1e1e; /* Dark background color */
+  --text-primary: #f2f1f2; /* Light gray text color */
+  --accent-color: #606fe2; /* Bright purple accent color */
+}
+
+
+body {
+  height: auto;
+  background: rgb(0,9,71);
+  background: linear-gradient(0deg, rgba(0,9,71,1) 0%, rgba(230,37,37,1) 50%, rgba(252,176,69,1) 100%);
+  background-size: cover;
+  font-family: sans-serif;
+  margin-top: 60px;
+  /* padding: 30px; */
+  border-color: 'white';
+  border-width: 10px;
+  color: #000000;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;	
+  font-size: 18px;
+	font-weight: 300;
+  overflow-y: auto;
+  display: grid;
+}
+
+
+
+
