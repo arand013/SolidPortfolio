@@ -1,12 +1,13 @@
-import './css/About.css'
-import './App.css'
+import '../css/About.css'
+import '../App.css'
 import me from '/public/navLogo.png';
+
 
 
 function About() {
     return (
 
-<body>
+<div>
     <div class="jumbotron mb-0">
         <div class="container">
             <div class="row">
@@ -36,7 +37,7 @@ function About() {
             {/* <!-- remaining paragraphs --> */}
         </div>
     </div>
-</body>
+</div>
 
 
     )

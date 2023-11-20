@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 
-import './css/Footer.css'
-import './App.css'
+import '../css/Footer.css'
+import '../App.css'
 import logo from '/public/navLogo.png'
 
 function Footer() {

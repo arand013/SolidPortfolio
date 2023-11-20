@@ -3,8 +3,8 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
 <link rel="stylesheet" href="css/templatemo-style.css">   */}
 import bore from '/public/bore.jpeg'
-import './css/Blog.css'
-import './App.css'
+import '../css/Blog.css'
+import '../App'
 
 function Blog({ post }) {
     return (

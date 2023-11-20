@@ -5,16 +5,19 @@
 
 
 import { createSignal } from 'solid-js'
-import Header from './Header.jsx';
-import Blog from './Blog.jsx';  
-import Footer from './Footer.jsx';  
-import About from './About.jsx'
+import { render } from "solid-js/web";
+import { Router, Routes, Route } from "@solidjs/router"; // 👈 Import the router
+import Header from './pages/Header.jsx';
+import Blog from './pages/Blog.jsx';  
+import Footer from './pages/Footer.jsx';  
+import About from './pages/About.jsx'
 import './App.css'
 
 // App.jsx
 
 function App() {
   // Example blog post data (replace with actual content)
+  
   // const blogPosts = [
   //   {
   //     title: 'Smartwatch Design Trends',
@@ -25,16 +28,31 @@ function App() {
   // ];
 
   return (
+  
+    <Router>
     <div class="app">
 
       <Header />
-        <div> 
-        <Blog />
-        </div>
-        <About/> 
+      <Routes>
+        <Route path="/About" component={About} /> {/* 👈 Define the about page route */}
+        <Route path="/Blog" component={Blog} /> {/* 👈 Define the contact page route */}
+      </Routes>
+
       <Footer />
+
     </div>
+    </Router>
+
+    
   );
 }
 
 export default App;
+
+
+    //  <Router> {/* 👈 Wrap the router around the app */}       
+    //     <Routes>
+    //       <Route path="/About" component={About} /> {/* 👈 Define the about page route */}
+    //       <Route path="/Blog" component={Blog} /> {/* 👈 Define the contact page route */}
+    //     </Routes>
+    //  </Router>
