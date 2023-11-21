@@ -11,7 +11,7 @@ function Footer() {
         <footer class="footer">
 
                 <div>
-                <section class="mb-4">
+                <section class="">
 
                     {/* <!-- Twitter --> */}
                     <a class="btn btn-outline-light btn-floating m-1" href="home" role="button"
